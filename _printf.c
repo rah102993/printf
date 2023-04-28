@@ -224,9 +224,7 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 		{'u', print_unsigned}, {'o', print_octal}, {'x', print_hexadecimal},
 		{'X', print_hexa_upper}, {'S', print_non_printable}, {'p', print_pointer},
 		{'r', print_reverse},
-		/**
-		* {'r', print_reverse}, {'R', print_rot13string},
-		*/
+		{'R', print_rot13string},
 		{'\0', NULL}
 	};
 	for (i = 0; fmt_types[i].fmt != '\0'; i++)
